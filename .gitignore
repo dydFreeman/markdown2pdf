@@ -1,1 +1,13 @@
+# Ignore Nodejs
 node_modules/
+
+# Ignore all Syntax Highlight Styles but not github
+src/scss/styles/*
+!src/scss/styles/github.scss
+
+# Ignore markdown files expect the demo
+src/markdown/*
+!src/markdown/ipsum.md
+
+# Never commit images
+src/images/*
