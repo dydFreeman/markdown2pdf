@@ -1,0 +1,40 @@
+@import 'github-markdown';
+@import 'styles/github';
+//@import 'styles/darkula';
+//@import 'styles/dark';
+//@import 'styles/androidstudio';
+
+body {
+}
+
+h1 {
+}
+
+header {
+	text-align: center;
+}
+
+footer {
+	margin-top: 5mm;
+	color: #444;
+}
+
+/* HTML Output */
+@media screen {
+	body {
+		max-width: 60em;
+		margin: 1cm auto;
+	}
+}
+
+/* PDF Output */
+@media print {
+	.markdown-body .highlight pre,
+	.markdown-body pre {
+		overflow: visible;
+	}
+	.markdown-body pre code,
+	.markdown-body pre {
+		word-wrap: break-word;
+	}
+}

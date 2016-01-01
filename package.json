@@ -1,0 +1,48 @@
+{
+  "name": "markdown2pdf",
+  "version": "0.1.0",
+  "description": "Create pdf and html with code syntaxhighlight from markdown",
+  "author": "Werner Hartnagel <info@dotmagic.de>",
+  "bin": {
+    "module-name": "./bin/module-name"
+  },
+  "scripts": {
+    "test": "vows --spec --isolate",
+    "start": "node index.js",
+    "predeploy": "echo im about to deploy",
+    "postdeploy": "echo ive deployed",
+    "prepublish": ""
+  },
+  "main": "lib/foo.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodejitsu/browsenpm.org"
+  },
+  "bugs": {
+    "url": "https://github.com/nodejitsu/browsenpm.org/issues"
+  },
+  "keywords": [
+    "html",
+    "markdown",
+    "pdf"
+  ],
+  "dependencies": {
+      "del": "^2.2.0",
+      "gulp-html-pdf": "^0.2.0",
+      "gulp-imagemin": "^2.4.0",
+      "gulp-markdown-pdf": "^2.1.0",
+      "gulp-sass": "^2.1.1",
+      "gulp-newer": "^1.1.0",
+      "gulp-remarkable": "^1.1.2",
+      "markdown-toc": "^0.12.2",
+      "nunjucks": "^2.2.0",
+      "remarkable-classy": "0.0.1"
+  },
+  "devDependencies": {
+  },
+  "preferGlobal": true,
+  "private": true,
+  "subdomain": "foobar",
+  "analyze": true,
+  "license": "MIT"
+}
