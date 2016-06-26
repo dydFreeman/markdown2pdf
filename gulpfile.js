@@ -9,7 +9,7 @@ hljs = require('highlight.js'),
 nunjucks = require('nunjucks'),
 toc = require('markdown-toc'),
 through = require("through2"),
-pdf = require('gulp-html-pdf')
+pdf = require('gulp-html-pdf');
 
 var conf = {
 	sass: 'src/scss/**/*.scss',
