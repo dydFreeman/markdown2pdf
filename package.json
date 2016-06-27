@@ -1,36 +1,35 @@
 {
-	"name": "markdown2pdf",
-	"version": "0.1.0",
-	"description": "Create pdf and html with code syntaxhighlight from markdown",
-	"author": "Werner Hartnagel <info@dotmagic.de>",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/dotmagic/markdown2pdf.git"
-	},
-	"bugs": {
-		"url": "https://github.com/dotmagic/markdown2pdf/issues"
-	},
-	"keywords": [
-		"html",
-		"markdown",
-		"pdf"
-	],
-	"dependencies": {
-		"del": "^2.2.0",
-		"gulp-html-pdf": "^0.2.0",
-		"gulp-imagemin": "^2.4.0",
-		"gulp-markdown-pdf": "^2.1.0",
-		"gulp-sass": "^2.1.1",
-		"gulp-newer": "^1.1.0",
-		"gulp-remarkable": "^1.1.2",
-		"markdown-toc": "^0.12.2",
-		"nunjucks": "^2.2.0",
-		"remarkable-classy": "0.0.1"
-	},
-	"devDependencies": {
-	},
-	"preferGlobal": true,
-	"private": true,
-	"analyze": true,
-	"license": "MIT"
+  "name": "markdown2pdf",
+  "version": "0.1.0",
+  "description": "Create pdf and html with code syntaxhighlight from markdown",
+  "author": "Werner Hartnagel <info@dotmagic.de>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dotmagic/markdown2pdf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dotmagic/markdown2pdf/issues"
+  },
+  "keywords": [
+    "html",
+    "markdown",
+    "pdf"
+  ],
+  "dependencies": {
+    "del": "^2.2.0",
+    "gulp-html-pdf": "^0.2.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-markdown-pdf": "^2.1.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-newer": "^1.1.0",
+    "gulp-remarkable": "^1.1.2",
+    "markdown-toc": "^0.12.2",
+    "nunjucks": "^2.2.0",
+    "through2": "^2.0.1",
+    "remarkable-classy": "0.0.1"
+  },
+  "preferGlobal": true,
+  "private": true,
+  "analyze": true,
+  "license": "MIT"
 }
