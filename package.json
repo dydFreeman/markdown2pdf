@@ -26,7 +26,8 @@
     "markdown-toc": "^0.12.2",
     "nunjucks": "^2.2.0",
     "through2": "^2.0.1",
-    "remarkable-classy": "0.0.1"
+    "remarkable-classy": "0.0.1",
+    "gulp": "^3.9.1"
   },
   "preferGlobal": true,
   "private": true,
