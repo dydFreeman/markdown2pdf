@@ -9,7 +9,12 @@ hljs = require('highlight.js'),
 nunjucks = require('nunjucks'),
 toc = require('markdown-toc'),
 through = require("through2"),
-pdf = require('gulp-html-pdf');
+pdf = require('gulp-html-pdf'),
+cheerio = require('cheerio'),
+path = require('path');
+
+var basePath = path.resolve(__dirname, '');
+
 
 var conf = {
 	sass: 'src/scss/**/*.scss',
@@ -35,6 +40,16 @@ var renderHTML = through.obj(function (chunk, enc, callback) {
 		stylesheet: conf.stylesheet,
 	 	content: md
 	});
+
+	var $ = cheerio.load(result);
+
+	$('img[src]').each(function () {
+		var imagePath = $(this).attr('src');
+		imagePath = path.resolve(basePath, imagePath);
+		$(this).attr('src', 'file://' + (process.platform === 'win32' ? '/' : '') + imagePath);
+	});
+
+	result = $.html();
 
 	chunk._contents = new Buffer(result, 'utf8');
 	//console.log(JSON.stringify(md, null, 4));
