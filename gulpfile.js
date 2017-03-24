@@ -46,6 +46,7 @@ var renderHTML = through.obj(function (chunk, enc, callback) {
 	$('img[src]').each(function () {
 		var imagePath = $(this).attr('src');
 		imagePath = path.resolve(basePath, imagePath);
+		$(this).wrap("<div class='imgWrapper'></div>" );
 		$(this).attr('src', 'file://' + (process.platform === 'win32' ? '/' : '') + imagePath);
 	});
 
@@ -122,5 +123,5 @@ gulp.task('watch', function() {
 
 gulp.task('staticfiles', ['sass', 'images']);
 
-gulp.task('build', ['documents']);
+gulp.task('build', ['clean','documents']);
 gulp.task('default', ['build', 'watch']);
